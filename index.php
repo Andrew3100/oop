@@ -1,2 +1,4 @@
 <?php
-echo 'Объектно-ориентированное программирование';
+require_once 'classes/FirstClass.php';
+
+var_dump($object = new MyFirstClass());
