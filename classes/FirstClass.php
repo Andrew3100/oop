@@ -7,14 +7,28 @@ class Car {
     public $color = 'red'; //Цвет автомобиля
     public $brand   ; //Марка
     public $year = 2020   ; //Год
+    public $speed;
+    public $wheels;
+
+    public function __construct($color,$brand,$speed,$wheels)
+    {
+        $this->color   =   $color;
+        $this->brand   =   $brand;
+        $this->speed   =   $speed;
+        $this->wheels  =   $wheels;
+    }
 
     /*Объявление метода*/
     public function GetCarInfo() {
-        $get_car_info ="<h3>О моём автомобиле:</h3><br>
-        Марка: $this->brand<br>
-        ГВ: $this->year<br>
-        Цвет: $this->color<br>";
+        $get_car_info =
+            "<h3>О моём автомобиле:</h3><br>
+        Цвет:   $this->color<br>
+        Марка:      $this->brand<br>
+        Скорость:    $this->speed<br>
+        Количество колёс:    $this->wheels<br>";
         return $get_car_info;
     }
+
+
 
 }
