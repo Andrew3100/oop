@@ -2,7 +2,7 @@
 require_once 'classes/FirstClass.php';
 
 
-$car1 = new Car('Чёрный','BMW',180,4);
+/*$car1 = new Car('Чёрный','BMW',180,4);
 $car2 = new Car('Ржавый','Пятёрка',220,4);
 
 function debug($data) {
@@ -11,4 +11,9 @@ function debug($data) {
 
 
 echo $car1->GetCarInfo();
-echo $car2->GetCarInfo();
+echo $car2->GetCarInfo();*/
+
+$file = new FileWrite('MyFile.txt','w');
+
+$write = $file->FilePutContent('Здравствуйте',$file->FileName);
+
